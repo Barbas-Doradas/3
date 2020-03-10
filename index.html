@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid_Moma</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap" rel="stylesheet">
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body
+        {font-family: 'Roboto Condensed', sans-serif;}
+        
+        h2{
+            font-size: 4em;
+            line-height: 1;
+            flex-grow: 1;
+        }
+         h3{
+            font-size: 2em;
+                    }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 200px 200px 200px;
+       }
+        .caixa{
+            background: blue
+        }
+        .c1{
+            background: #00AFD7
+        }
+        .c4{
+            background:#FFCD00; 
+        }
+        .c5{
+            background: black;
+                color: white;
+        }
+        .c1, .c4, .c5{
+            display: flex;
+            flex-direction: column;
+            padding: 1.3em 2.3em;
+            grid-column: 2 span;
+        }
+        .c2, .c3, .c6{
+            grid-column: 3 span; 
+        }
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+             }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="caixa c1"> 
+       <h2>Perro Semiundido</h2>
+       <h3>Francisco de Goya</h3>
+       </div> 
+       <div class="caixa c2">
+       <img src="img/7534f8c8-62e8-4eaa-93bd-3669b520ca84detalle.jpg" alt="">
+       </div>
+       <div class="caixa c3">
+       <img src="img/duel.jpg" alt="">
+       </div>
+       <div class="caixa c4">
+       <h2>Duelo a Garrotazos</h2>
+       <h3>Francisco de Goya</h3>
+       </div>
+       <div class="caixa c5">
+       <h2>Saturno devorando a sus hijos</h2>
+       <h3>Francisco de Goya</h3>
+       </div>
+       <div class="caixa c6">
+       <img src="img/tumblr_inline_nhbqvq5hou1sjxsj2-1.jpg" alt="">
+       </div>
+    </div>
+    
+</body>
+</html>
